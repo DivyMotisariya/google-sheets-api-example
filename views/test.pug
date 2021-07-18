@@ -1,0 +1,23 @@
+html 
+  head 
+    title Sheets API Node.js 
+    link(href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet")
+  body 
+    nav.navbar.navbar-expand-lg.navbar.navbar-dark.bg-primary 
+      .container-fluid 
+        a.navbar-brand(href="#") SECTION
+        .collapse.navbar-collapse#navbarSupportedContext 
+          ul.navbar-nav.me-auto.mb-2.mb-lg-0
+    .container 
+      .card 
+        .card-header ARTICLE SUGGESTION
+        .card-body 
+          form(action="", method="POST") 
+            .form-group 
+              label(for="formGroupExampleInput") Article Title 
+              input.form-control#article(type="text", name="article", placeholder="Article")
+            .form-group 
+              label(for="formGroupExampleInput2") Article Author 
+              input.form-control#author(type="text", name="author", placeholder="Author")
+            br
+            button.btn.btn-primary.btn-sm(type="submit") Submit
